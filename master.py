@@ -26,5 +26,13 @@ def add():
 Присоединяйся!'''
 
 
+@app.route('/image_mars')
+def image():
+    return '''<h1>Привет, Марс!</h1><br>
+    <img src="https://narisyu.cdnbro.com/posts/4780903-risunok-planety-mars-29.jpg" alt="mars"
+    height="400", width="700"><br>
+    Вот она какая, красная планета.'''
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
